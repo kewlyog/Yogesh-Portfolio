@@ -11,12 +11,12 @@ export default function Footer() {
                 Yogesh Aher
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
-                Full Stack Developer & Software Engineer
+                Full Stack Developer & AI/ML Engineer
               </p>
             </div>
             <div className="flex space-x-6">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/kewlyog"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -30,7 +30,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/yogesh-aher-80490a199/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -44,7 +44,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://x.com/kewlyog"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
