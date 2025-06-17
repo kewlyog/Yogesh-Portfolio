@@ -19,28 +19,29 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <p className="text-gray-600 dark:text-gray-300">
-                I&apos;m a passionate Full Stack Developer with a strong foundation in modern web technologies.
-                My journey in software development has equipped me with the skills to build robust and
-                scalable applications.
+                I&apos;m a passionate Full Stack Developer and AI/ML Engineer with expertise in building intelligent applications. 
+                My journey combines traditional software development with cutting-edge AI technologies, 
+                allowing me to create innovative solutions that solve complex problems.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                I love solving complex problems and creating elegant solutions that make a difference.
-                When I&apos;m not coding, you can find me exploring new technologies and contributing to
-                open-source projects.
+                I specialize in implementing machine learning models, developing AI-powered applications, 
+                and integrating AI capabilities into existing systems. When I&apos;m not coding, 
+                you can find me exploring new AI technologies, contributing to open-source projects, 
+                and staying updated with the latest developments in the field.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
                 <h3 className="font-semibold mb-2">Experience</h3>
-                <p className="text-gray-600 dark:text-gray-300">5+ Years</p>
+                <p className="text-gray-600 dark:text-gray-300">10+ Years</p>
               </div>
               <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-                <h3 className="font-semibold mb-2">Projects</h3>
-                <p className="text-gray-600 dark:text-gray-300">20+ Completed</p>
+                <h3 className="font-semibold mb-2">AI Projects</h3>
+                <p className="text-gray-600 dark:text-gray-300">10+ Completed</p>
               </div>
               <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-                <h3 className="font-semibold mb-2">Clients</h3>
-                <p className="text-gray-600 dark:text-gray-300">15+ Satisfied</p>
+                <h3 className="font-semibold mb-2">ML Models</h3>
+                <p className="text-gray-600 dark:text-gray-300">15+ Deployed</p>
               </div>
               <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
                 <h3 className="font-semibold mb-2">Location</h3>

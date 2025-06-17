@@ -1,30 +1,40 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce platform built with Next.js, Node.js, and MongoDB.',
-    image: '/project1.jpg',
-    technologies: ['Next.js', 'Node.js', 'MongoDB', 'Tailwind CSS'],
-    link: '#'
+    title: 'AI-Powered Content Generator',
+    description:
+      'Developed a sophisticated content generation system using GPT-4 and LangChain, capable of creating high-quality, contextually relevant content for various industries.',
+    technologies: ['Python', 'LangChain', 'OpenAI API', 'FastAPI', 'React'],
+    image: '/projects/ai-content.jpg',
+    link: '#',
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates.',
-    image: '/project2.jpg',
-    technologies: ['React', 'Firebase', 'Material-UI'],
-    link: '#'
+    title: 'Computer Vision Pipeline',
+    description:
+      'Built an end-to-end computer vision pipeline for real-time object detection and tracking, implementing custom YOLO models and optimizing for edge devices.',
+    technologies: ['Python', 'PyTorch', 'OpenCV', 'TensorRT', 'Docker'],
+    image: '/projects/computer-vision.jpg',
+    link: '#',
   },
   {
-    title: 'AI-Powered Chatbot',
-    description: 'An intelligent chatbot using OpenAI API for customer support.',
-    image: '/project3.jpg',
-    technologies: ['Python', 'OpenAI', 'FastAPI', 'React'],
-    link: '#'
-  }
+    title: 'ML-Powered Analytics Dashboard',
+    description:
+      'Created an interactive analytics dashboard with ML-powered insights, featuring predictive analytics and anomaly detection for business metrics.',
+    technologies: ['Python', 'Scikit-learn', 'Pandas', 'React', 'D3.js'],
+    image: '/projects/analytics.jpg',
+    link: '#',
+  },
+  {
+    title: 'NLP Text Classification System',
+    description:
+      'Implemented a state-of-the-art text classification system using transformer models, achieving 95% accuracy in sentiment analysis and topic classification.',
+    technologies: ['Python', 'Hugging Face', 'PyTorch', 'FastAPI', 'Docker'],
+    image: '/projects/nlp.jpg',
+    link: '#',
+  },
 ];
 
 export default function Projects() {
@@ -41,28 +51,25 @@ export default function Projects() {
           <h2 className="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
             Featured Projects
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg"
               >
                 <div className="relative h-48">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 opacity-90" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <h3 className="text-2xl font-bold text-white text-center px-4">
+                      {project.title}
+                    </h3>
+                  </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
-                    {project.title}
-                  </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     {project.description}
                   </p>
@@ -70,7 +77,7 @@ export default function Projects() {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-xs"
+                        className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm"
                       >
                         {tech}
                       </span>
@@ -78,7 +85,7 @@ export default function Projects() {
                   </div>
                   <a
                     href={project.link}
-                    className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                    className="inline-block px-6 py-2 bg-gradient-to-r from-blue-400 to-purple-500 text-white rounded-full hover:opacity-90 transition-opacity"
                   >
                     View Project
                   </a>

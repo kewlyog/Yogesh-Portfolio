@@ -42,7 +42,7 @@ export default function Navigation() {
               href="#"
               className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500"
             >
-              Yog
+              Yogesh&apos;s Portfolio
             </a>
             <div className="hidden md:flex space-x-8">
               {navItems.map((item) => (

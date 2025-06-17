@@ -13,10 +13,13 @@ export default function Hero() {
           className="text-center"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-            Hi, I&apos;m Yog
+            Hi, I&apos;m Yogesh Aher
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8">
-            Full Stack Developer & Software Engineer
+          <p className="text-xl md:text-2xl text-gray-300 mb-4">
+            Full Stack Developer & AI/ML Engineer
+          </p>
+          <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+            Specializing in building intelligent applications and implementing cutting-edge AI solutions
           </p>
           <motion.div
             initial={{ opacity: 0 }}

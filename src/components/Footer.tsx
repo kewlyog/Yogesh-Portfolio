@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-8 md:mb-0">
               <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                Yog
+                Yogesh Aher
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mt-2">
                 Full Stack Developer & Software Engineer
