@@ -37,12 +37,16 @@ export default function Contact() {
         to_email: 'a.yogesh87@gmail.com'
       };
 
-      await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+      console.log('Sending email with params:', templateParams);
+
+      const response = await emailjs.send(
+        'service_01d8lws',
+        'template_k4e4x6t',
         templateParams,
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'eHOEELBieRnRpJQ2Y'
       );
+
+      console.log('EmailJS response:', response);
       
       setStatus({
         type: 'success',
@@ -59,7 +63,7 @@ export default function Contact() {
       console.error('Error sending email:', error);
       setStatus({
         type: 'error',
-        message: 'Failed to send message. Please try again later.'
+        message: `Failed to send message: ${error instanceof Error ? error.message : 'Unknown error'}`
       });
     }
   };
