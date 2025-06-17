@@ -29,12 +29,10 @@ export default function Contact() {
     setStatus({ type: 'loading', message: 'Sending message...' });
 
     try {
-      // Replace these with your EmailJS credentials
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
-        message: formData.message,
-        to_email: 'a.yogesh87@gmail.com'
+        message: formData.message
       };
 
       console.log('Sending email with params:', templateParams);
