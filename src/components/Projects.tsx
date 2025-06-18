@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'AI-Powered Content Generator',
+    title: 'AI Chatbot',
     description:
-      'Developed a sophisticated content generation system using GPT-4 and LangChain, capable of creating high-quality, contextually relevant content for various industries.',
-    technologies: ['Python', 'LangChain', 'OpenAI API', 'FastAPI', 'React'],
-    image: '/projects/ai-content.jpg',
-    link: '#',
+      'An intelligent conversational AI chatbot built with modern NLP techniques, featuring real-time responses, context awareness, and natural language understanding capabilities.',
+    technologies: ['Python', 'OpenAI API', 'React', 'FastAPI', 'WebSocket'],
+    image: '/projects/ai-chatbot.jpg',
+    link: 'https://ai-chatbot-dmxq.onrender.com',
   },
   {
     title: 'Computer Vision Pipeline',
@@ -85,6 +85,8 @@ export default function Projects() {
                   </div>
                   <a
                     href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block px-6 py-2 bg-gradient-to-r from-blue-400 to-purple-500 text-white rounded-full hover:opacity-90 transition-opacity"
                   >
                     View Project
