@@ -60,7 +60,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center text-gray-600 dark:text-gray-300">
-            <p>&copy; {new Date().getFullYear()} Yog. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Yogesh Aher. All rights reserved.</p>
           </div>
         </div>
       </div>
