@@ -40,7 +40,7 @@ export default function Contact() {
 
       const response = await emailjs.send(
         'service_01d8lws',
-        'template_k4e4x6t',
+        'template_2ggvd39',
         templateParams,
         'eHOEELBieRnRpJQ2Y'
       );
