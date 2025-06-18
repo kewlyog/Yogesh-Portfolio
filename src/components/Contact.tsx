@@ -32,7 +32,8 @@ export default function Contact() {
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
-        message: formData.message
+        message: formData.message,
+        to_email: 'a.yogesh87@gmail.com'
       };
 
       console.log('Sending email with params:', templateParams);
