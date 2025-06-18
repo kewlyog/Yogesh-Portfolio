@@ -13,7 +13,7 @@ interface AnalyticsEvent {
 // Extend Window interface for gtag
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void;
+    gtag: (command: string, targetId: string, config?: Record<string, unknown>) => void;
   }
 }
 
@@ -73,7 +73,7 @@ export default function Analytics() {
     };
 
     // Track time on page
-    let startTime = Date.now();
+    const startTime = Date.now();
     const trackTimeOnPage = () => {
       const timeSpent = Math.round((Date.now() - startTime) / 1000);
       if (timeSpent > 30) {
