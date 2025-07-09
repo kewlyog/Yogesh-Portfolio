@@ -17,7 +17,7 @@ const projects = [
       'Built an end-to-end computer vision pipeline for real-time object detection and tracking, implementing custom YOLO models and optimizing for edge devices.',
     technologies: ['Python', 'PyTorch', 'OpenCV', 'TensorRT', 'Docker'],
     image: '/projects/computer-vision.jpg',
-    link: '#',
+    link: 'https://computer-vision-pipeline-demo-kewlyog.streamlit.app',
   },
   {
     title: 'ML-Powered Analytics Dashboard',
