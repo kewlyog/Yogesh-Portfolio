@@ -32,8 +32,8 @@ export default function Navigation() {
         animate={{ y: 0 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-md'
-            : 'bg-transparent'
+            ? 'bg-black/70 backdrop-blur-md shadow-md'
+            : 'bg-black/40'
         }`}
       >
         <div className="container mx-auto px-4">
@@ -49,14 +49,14 @@ export default function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className="text-white hover:text-blue-400 transition-colors"
                 >
                   {item.name}
                 </a>
               ))}
             </div>
             <button
-              className="md:hidden text-gray-600 dark:text-gray-300"
+              className="md:hidden text-white"
               onClick={() => setIsMobileMenuOpen(true)}
               aria-label="Toggle menu"
             >

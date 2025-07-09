@@ -4,8 +4,21 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white">
-      <div className="container mx-auto px-4">
+    <section className="relative min-h-screen w-screen overflow-hidden">
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/hero_bg.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        draggable={false}
+      />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/90 z-10"></div>
+      {/* Hero Content */}
+      <div className="relative z-20 flex flex-col items-center justify-center text-center min-h-screen px-4 sm:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,13 +42,13 @@ export default function Hero() {
           >
             <a
               href="#contact"
-              className="px-8 py-3 bg-blue-600 rounded-full hover:bg-blue-700 transition-colors"
+              className="px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-gray-200 transition-colors"
             >
               Contact Me
             </a>
             <a
               href="#projects"
-              className="px-8 py-3 border border-blue-600 rounded-full hover:bg-blue-600/10 transition-colors"
+              className="px-8 py-3 border border-white text-white rounded-full hover:bg-white hover:text-black transition-colors"
             >
               View Projects
             </a>
