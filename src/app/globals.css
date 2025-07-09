@@ -23,6 +23,25 @@ html, body {
   overflow-x: hidden;
 }
 
+/* Hide scrollbar by default, show on scroll/hover (Webkit browsers) */
+body::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+body:hover::-webkit-scrollbar,
+body:active::-webkit-scrollbar,
+body:focus::-webkit-scrollbar,
+body:focus-within::-webkit-scrollbar {
+  opacity: 1;
+  background: rgba(0,0,0,0.2);
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(100,100,100,0.4);
+  border-radius: 4px;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

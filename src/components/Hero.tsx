@@ -25,7 +25,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 leading-tight md:leading-[1.15]">
             Hi, I&apos;m Yogesh Aher
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-4">
